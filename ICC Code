@@ -1,3 +1,4 @@
+astronaut_count = int(input())
 #for loop to get the gender and age of each astronaut
 for astronaut in range(astronaut_count):
     gender = input("What is the gender of astronaut {}? (M/F):".format(astronaut + 1)).strip().lower()
@@ -12,4 +13,3 @@ for astronaut in range(astronaut_count):
             ox_liter_perhour = 7
         else:
             ox_liter_perhour = 16.8
-            
