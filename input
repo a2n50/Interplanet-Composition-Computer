@@ -1,0 +1,18 @@
+#input menu
+print("="* 40)
+print("WELCOME TO INTERPLANET COMPOSITION COMPUTER")
+print("="* 40)
+planet_name = input("What is the name of the planet you are traveling to?:").strip().lower()
+astronaut_count = int(input("How many astronaut?"))
+journey_duration = int(input("How many hours of travel ?:"))
+
+planet = ["mercury", "venus", "mars", "jupiter", "saturn", "uranus", "neptune"]
+if planet_name not in planet:
+    print("Sorry, we do not have information on that planet.")
+    planet_name = input("What is the name of the planet you are going to add?:").strip().lower()
+    planet.append(planet_name)
+
+#for loop to get the gender and age of each astronaut
+for astronaut in range(astronaut_count):
+    gender = input("What is the gender of astronaut {}? (M/F):".format(astronaut + 1)).strip().lower()
+    age = int(input("What is the age of astronaut {}?:".format(astronaut + 1)))
